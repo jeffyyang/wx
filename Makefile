@@ -12,7 +12,14 @@ build:
 	@cp src/*.html lib
 	@mkdir lib/ace
 	@cp src/ace/* lib/ace
-
+	@rm -Rf package
+	@mkdir package
+	@cp -R lib package/lib
+	@cp package.json package
+	@cp README.md package
+	@cp LICENSE package
+	@rm -Rf demo/node_modules/wx
+	@cp -R package demo/node_modules/wx
 watch:
 	@coffee -wc$(opt) -o lib src
 	@cp src/*.html lib
