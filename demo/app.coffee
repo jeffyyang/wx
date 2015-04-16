@@ -54,10 +54,10 @@ else
     app_secret       : '667350c007f93e0c17b9ed3e6b875799'
     token            : 'jlinfo123'
     redis_options    : 
-      host:'192.168.199.1'
-      port:'6397'
+      host:'50.30.35.9'
+      port:'3878'
       options: '394f20f470ef11a2d0edf19ea7cb5a8e'
-    populate_user    : 'jeffyyang'
+    populate_user    : 'jinlin100'
     debug            : true  
 
   # ### 
