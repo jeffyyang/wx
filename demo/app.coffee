@@ -47,8 +47,18 @@ else
   app.use express.static(path.join(__dirname, 'public'))
 
   # ### 安装与使用
-  wx = global.wx = new require('wx') \
-    require(path.join(__dirname, 'wx_secret.coffee'))
+  #wx = global.wx = new require('wx') \
+  #  require(path.join(__dirname, 'wx_secret.coffee'))
+  wx = global.wx = new require('wx')
+    app_id           : 'wx300e4d1cba72d969'
+    app_secret       : '667350c007f93e0c17b9ed3e6b875799'
+    token            : 'jlinfo123'
+    redis_options    : 
+      host:'192.168.199.1'
+      port:'6397'
+      options: '394f20f470ef11a2d0edf19ea7cb5a8e'
+    populate_user    : 'jeffyyang'
+    debug            : true  
 
   # ### 
   subscribers = null
