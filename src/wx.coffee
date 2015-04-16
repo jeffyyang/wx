@@ -56,6 +56,13 @@ module.exports = ({token, app_id, app_secret, encoding_aes_key, redis_options, p
   redis_pubsub = redis.createClient port, host, options
   redis_client = redis.createClient port, host, options
 
+  redis_pubsub.auth options, -> console.log '通过认证'
+  redis_pubsub.on 'ready', (res) ->console.log '连接已经就绪中' 
+
+
+  redis_client.auth options, -> console.log '通过认证'
+  redis_client.on 'ready', (res) ->console.log '连接已经就绪中'  
+
   # 访问口令局部缓存。
   access_token = null
 
