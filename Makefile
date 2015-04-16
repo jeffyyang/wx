@@ -20,6 +20,7 @@ build:
 	@cp LICENSE package
 	@rm -Rf demo/node_modules/wx
 	@cp -R package demo/node_modules/wx
+	
 watch:
 	@coffee -wc$(opt) -o lib src
 	@cp src/*.html lib
@@ -32,6 +33,6 @@ publish:
 	@cp README.md package
 	@cp LICENSE package
 	@tar czf $(TARBALL) package
-	@rm -r package
+	@rm -Rf package
 
 .PHONY: build
