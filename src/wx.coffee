@@ -44,6 +44,8 @@ api_binary = 'http://file.api.weixin.qq.com/cgi-bin'
 # + `debug`：调试模式，输出调试信息。
 module.exports = ({token, app_id, app_secret, encoding_aes_key, redis_options, populate_user, debug}) ->
 
+  console.log 'app_id:', app_id, 'app_secret:', app_secret, 'redis_options.host:', redis_options.host
+
   # ### REDIS客户端
   #
   # 创建`2`个`REDIS`客户端：
