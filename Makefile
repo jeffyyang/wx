@@ -32,6 +32,6 @@ publish:
 	@cp README.md package
 	@cp LICENSE package
 	@tar czf $(TARBALL) package
-	@rm -r package
+	@rm -Rf package
 
 .PHONY: build
