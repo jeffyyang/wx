@@ -50,8 +50,8 @@ else
   #wx = global.wx = new require('wx') \
   #  require(path.join(__dirname, 'wx_secret.coffee'))
   wx = global.wx = new require('wx')
-    app_id           : 'wx300e4d1cba72d969'
-    app_secret       : '667350c007f93e0c17b9ed3e6b875799'
+    app_id           : 'wx9c9ad9c3c98239ad'
+    app_secret       : '9eab7eb236ceffe8e3ecb99443e38aa7'
     token            : 'jlinfo123'
     redis_options    : 
       host:'50.30.35.9'
