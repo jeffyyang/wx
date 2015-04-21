@@ -57,7 +57,7 @@ else
       host:'50.30.35.9'
       port:'3878'
       options: '394f20f470ef11a2d0edf19ea7cb5a8e'
-    populate_user    : 'jinlin100'
+    populate_user    : 'off'
     debug            : true  
 
   # ### 
